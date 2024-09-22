@@ -1,0 +1,43 @@
+﻿version: '3'
+
+services:
+  backend:
+    build: ./backend
+    container_name: backend
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    networks:
+      - project_network
+    depends_on:
+      - postgres_db
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    volumes:
+      - ./frontend:/app
+    ports:
+      - "8080:8080"
+    networks:
+      - project_network
+
+  postgres_db:
+    image: postgres
+    container_name: postgres_db
+    environment:
+      - POSTGRES_PASSWORD=your_password
+    ports:
+      - "5432:5432"
+    networks:
+      - project_network
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+networks:
+  project_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
