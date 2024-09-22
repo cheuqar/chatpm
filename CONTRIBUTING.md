@@ -126,7 +126,7 @@ We appreciate your contributions! To submit a pull request:
 ## Community
 
 - Be respectful and considerate in all interactions.
-- Follow the [Code of Conduct](CODE_OF_CONDUCT.md).
+- Follow the [Code of Conduct](CODE_OF_CONDUCT.MD).
 - If you have questions, feel free to open an issue or start a discussion.
 
 ## License
