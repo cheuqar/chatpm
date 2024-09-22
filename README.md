@@ -26,9 +26,7 @@
 4. [Deployment](#deployment)
 5. [Future Enhancements](#future-enhancements)
 6. [Next Steps](#next-steps)
-7. [Diagrams](#diagrams)
-    - [User Story Diagram](#user-story-diagram)
-
+7. [User Stories](#user-stories)
 ---
 
 ## Project Objectives
@@ -189,9 +187,25 @@
    - Collect user feedback to refine and improve the application.
 
 
-# Diagrams
-## User Story Diagram
-![User Story Diagram](chatpm-user-story-0.1.png)
+# User Stories
+
+![ChatPM User Stories](chatpm-user-story-0.1.png)
+
+*Figure: High-level user story diagram illustrating different user roles and their interactions in the current phase of the chatpm project.*
+
+The diagram above showcases the key functionalities available to each user role in the **chatpm** application. It provides a visual representation of how Project Managers and Admins interact with the system to achieve their goals.
+
+- **Project Managers** can:
+  - Create and manage their own projects.
+  - Update project details and track progress.
+  - Generate summaries and visualizations for reporting.
+
+- **Admins** can:
+  - View and query all projects in the system.
+  - Manage user accounts and control access.
+
+Both roles authenticate to access the system's features, ensuring secure and role-based interactions.
+
 
 
 ---
